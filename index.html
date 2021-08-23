@@ -2,26 +2,60 @@
 <html>
     <head>
         <title>Blaire's Portfolio</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     </head>
     <body>
         <header>
             <h1>Blaire Belle</h1>
             <nav>
-                <ul>
+                <ul class="navigation-items">
                     <li><a href="#about">About Me</a></li>  
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a>Contact</a></li>     
+                    <li><a href="contact.html" target="_blank">Contact</a></li>     
                 </ul>
             </nav>
         </header>
+
+        <br>
         <main>
-            <div id="about"><p>Welcome! I'm Blaire, a web developer based in Florida. I made the switch into Tech from a finance background, and I am excited to be able to build beautiful projects for the web. </p>
-            <p>I started my programming journey with online classes, later moving on to bootcamp curriculum, in order to become a professional web developer. </p>
-            <p>What I love about development is the ability to work on various projects, problem solving, and creating something of value for someone. When I'm not working or studying, I enjoy soapmaking, baking, and being in nature.</p></div>
-            <div id="projects"></div>
-            <div id="skills">HTML5 CSS3 JS Git GitHub Python</div>
+            <section id="about">
+                <div id="text">
+                <h2>About Me</h2>
+                <p class="about-me">Welcome! I'm Blaire, a web developer based in Florida. I made the switch into tech from a finance background, and I am excited to be able to build beautiful projects for the web. </p>
+                <p class="about-me">I started my programming journey with online classes, later moving on to bootcamp curriculum, in order to become a professional web developer. </p>
+                <p class="about-me">What I love about development is the ability to work on various projects, problem solving, and creating something of value for someone. When I'm not working or studying, I enjoy soapmaking, baking, and being in nature.</p>
+                </div>
+                <img src="Images/main-image.jfif" alt="Placeholder Photo" id="sunset" class="portrait" onmouseover="showtext()" onmouseout="hide()"> <!-- Placeholder for profile picture --> 
+            </section>
+            <br>
+            <section id="projects">
+                <div id="proj-container">
+                    <h2>Projects</h2>
+                    <span>
+                    <div id="proj1"><a href="https://blaire-b.github.io/survey_form/" target="_blank"><h4>Home Survey</h4><img src="Images/home-survey.jfif" alt="Home buying survey"></a><p>This project was made for a real estate agent who would be able to get information from leads on what they are looking for in buying a home. The technologies used for this project are HTML5, CSS3, and JS.</p></div>
+                    <div id="proj2"><a href="https://blaire-b.github.io/tribute_page/" target="_blank"><h4>Sun Tribute</h4><img src="Images/sun-tribute.jfif" alt="Sun"></a><p>This project was to build a tribute page for anything of choice. The page demonstrates the importance of the sun to all earthlings. The technologies used for this project include HTML5 and CSS3. </p></div>
+                    <div id="proj3"><a href="https://blaire-b.github.io/Favorite-things/" target="_blank"><h4>Favorite Things</h4><img src="Images/favorite-things.jfif" alt="favorite Things"></a><p>This project was designed as a static site to showcase the clients favorite things in the world. The technologies used for this project are HTML5 and inline CSS.</p></div>
+                    </span>
+            </div>
+        </section>
+        <br>
+            <section>
+                <div id="skills-container">
+                    <h2>Skills</h2>
+                    <div>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-git"></i>
+                    <i class="fab fa-chrome"></i>
+                    <i class="fab fa-github"></i>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer>Made by Blaire</footer>
+        <footer id="this">Made by Blaire</footer>
+        <script src="index.js"></script>
     </body>
 </html>
